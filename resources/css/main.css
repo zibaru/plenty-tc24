@@ -1,4 +1,7 @@
 /* Change background colour */
 body {
-    background-color: #808080;
+  background-color: #808080;
+  .bg-info {
+    display: none !important;
+  }
 }

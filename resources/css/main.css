@@ -2,6 +2,7 @@
 body {
   background-color: #808080;
 }
+/* Hide "Artikalpaket" badge */
 .bg-info {
   display: none !important;
 }

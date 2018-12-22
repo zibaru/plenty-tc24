@@ -156,6 +156,10 @@
 
                     <div class="tab-content">
                     <!--  EINSCHUB FUER DIE ARTIKELMERKMALE -->
+                    {% if ids.itemId == 110158 %}
+                      ID ist 110158
+                    {% endif %}
+
                     <ul>
                       {% for prop in item.documents[0].data.properties %}
                           {% if prop.group.names.propertyGroupId == "2" %}

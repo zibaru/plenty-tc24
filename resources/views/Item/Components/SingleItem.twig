@@ -155,17 +155,17 @@
                     </ul>
 
                     <div class="tab-content">
-                    <!-- Einschub für Artikelmerkmale -->
+                    <!--  EINSCHUB FUER DIE ARTIKELMERKMALE -->
                     <ul>
                       {% for prop in item.documents[0].data.properties %}
                           {% if prop.group.names.propertyGroupId == "2" %}
                               <li>
-                                  <p>{{ prop.property.names.name }}: {{ prop.texts.value }}</p>
+                                  <b>{{ prop.property.names.name }}:</b> {{ prop.texts.value }}
                               </li>
                           {% endif %}
                       {% endfor %}
                     </ul>
-                    <!-- Ende des Einschubs -->
+                    <!-- ENDE DES EINSCHUBS -->
                         {% if 'item.description' in itemData or 'all' in itemData %}
                             <div class="tab-pane active" :id="'details-' + currentVariation.variation.id" role="tabpanel" v-if="isDescriptionTabActive">
                                 <div class="m-y-2" v-html="currentVariation.texts.description">

@@ -10,7 +10,7 @@ use Plenty\Plugin\Templates\Twig;
 
 class ThemeServiceProvider extends ServiceProvider
 {
-const PRIORITY = 0;
+  const PRIORITY = 0;
   /**
   * Register the service provider.
   */
@@ -18,16 +18,26 @@ const PRIORITY = 0;
   {
   }
   /**
-  	 * Boot a template for the basket that will be displayed in the template plugin instead of the original basket.
-  	 */
-  	public function boot(Twig $twig, Dispatcher $eventDispatcher)
+  * Boot a template for the basket that will be displayed in the template plugin instead of the original basket.
+  */
+  public function boot(Twig $twig, Dispatcher $eventDispatcher)
+  {
+    $eventDispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
+    {
+      if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
       {
-          $eventDispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
-          {
-              if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
-              {
-                  $container->setNewComponentTemplate('Theme::content.SingleItem');
-              }
-          }, self::PRIORITY);
+        $container->setNewComponentTemplate('Theme::content.SingleItem');
       }
+    }, self::PRIORITY);
+  }
+  public function boot(Twig $twig, Dispatcher $eventDispatcher)
+  {
+    $eventDispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
+    {
+      if ($container->getOriginComponentTemplate()=='Ceres::Checkout.Components.ShippingProfileSelect')
+      {
+        $container->setNewComponentTemplate('Theme::content.ShippingProfileSelect');
+      }
+    }, self::PRIORITY);
+  }
 }

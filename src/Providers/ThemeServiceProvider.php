@@ -16,7 +16,7 @@ class ThemeServiceProvider extends ServiceProvider
      	 {
       if ($container->getOriginComponentTemplate()=='Ceres::Item.Components.SingleItem')
      			 {
-      $container->setNewComponentTemplate('Theme::Item.Components.SingleItem');
+      $container->setNewComponentTemplate('Theme::Item.SingleItem');
      			 }
      }, self::PRIORITY);
   }

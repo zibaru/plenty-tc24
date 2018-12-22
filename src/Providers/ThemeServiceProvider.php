@@ -28,12 +28,7 @@ class ThemeServiceProvider extends ServiceProvider
       {
         $container->setNewComponentTemplate('Theme::content.SingleItem');
       }
-    }, self::PRIORITY);
-  }
-  public function boot(Twig $twig, Dispatcher $eventDispatcher)
-  {
-    $eventDispatcher->listen('IO.Component.Import', function (ComponentContainer $container)
-    {
+      
       if ($container->getOriginComponentTemplate()=='Ceres::Checkout.Components.ShippingProfileSelect')
       {
         $container->setNewComponentTemplate('Theme::content.ShippingProfileSelect');

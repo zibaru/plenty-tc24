@@ -164,53 +164,53 @@
                               <td>${ property.property.names.name}</td>
                               <td>${ property.texts.value}</td>
                             </tr>
-                            <tr> <!--  ZOLL -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 23">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 23">${ property.texts.value}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 23"> <!--  ZOLL -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.texts.value}</td>
                             </tr>
-                            <tr> <!--  REIFENBREITE -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 21">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 21">${ property.texts.value}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 21"> <!--  REIFENBREITE -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.texts.value}</td>
                             </tr>
-                            <tr> <!--  REIFENHOEHE -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 22">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 22">${ property.texts.value}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 22"> <!--  REIFENHOEHE -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.texts.value}</td>
                             </tr>
-                            <tr> <!--  REIFENSPEZIFIKATION -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 20">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 20">${ property.selection.name}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 20"> <!--  REIFENSPEZIFIKATION -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.selection.name}</td>
                             </tr>
-                            <tr> <!--  GESCHWINDIGKEITSINDEX -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 17">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 17">${ property.selection.name}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 17"> <!--  GESCHWINDIGKEITSINDEX -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.selection.name}</td>
                             </tr>
-                            <tr> <!--  TRAGFAEHIGKEITSINDEX -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 18">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 18">${ property.texts.value}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 18"> <!--  TRAGFAEHIGKEITSINDEX -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.texts.value}</td>
                             </tr>
-                            <tr> <!--  ZUSAETZLICHE MERKMALE -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25">${ property.selection.name}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 25"> <!--  ZUSAETZLICHE MERKMALE -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.selection.name}</td>
                             </tr>
-                            <tr> <!--  MARKENEINSCHRAENKUNG -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26">${ property.selection.name}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 26"> <!--  MARKENEINSCHRAENKUNG -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.selection.name}</td>
                             </tr>
-                            <tr> <!--  DOT -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 24">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 24">${ property.texts.value}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 24"> <!--  DOT -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.texts.value}</td>
                             </tr>
-                            <tr> <!--  MODELL -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 16">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 16">${ property.texts.value}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 16"> <!--  MODELL -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.texts.value}</td>
                             </tr>
-                            <tr> <!--  FAHRZEUGTYP -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 19">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 19">${ property.selection.name}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 19"> <!--  FAHRZEUGTYP -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.selection.name}</td>
                             </tr>
                             <tr>
-                                <td>{{ trans("Ceres::Template.singleItemId") }}</td>
-                                <td>${ currentVariation.item.id }</td>
+                              <td>{{ trans("Ceres::Template.singleItemId") }}</td>
+                              <td>${ currentVariation.item.id }</td>
                             </tr>
                           </tbody>
                         </table>

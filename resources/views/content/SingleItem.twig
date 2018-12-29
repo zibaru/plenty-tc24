@@ -157,22 +157,27 @@
                     <div class="tab-content">
 
 
+
+
+
                     <!--  TABELLE FUER MERKMALE -->
-                    <div class="m-y-2">
-                      <table class="table table-striped table-hover table-sm">
-                        <tbody>
+                    <div class="tab-pane" id="assessments-details" role="tabpanel">
+                      <div class="m-y-2">
+                        <table class="table table-striped table-hover table-sm">
+                          <tbody>
 
-                        <span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 21">
-                          <tr>
-                              <td>${ property.property.names.name}</td>
-                              <td>${ property.texts.value}</td>
-                          </tr>
-                          </span>
+                          <span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 21">
+                            <tr>
+                                <td>${ property.property.names.name}</td>
+                                <td>${ property.texts.value}</td>
+                            </tr>
+                            </span>
 
 
-                        </tbody>
-                      </table>
-                    </div>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>  
                     <!--  ENDE TABELLE FUER MERKMALE -->
 
 

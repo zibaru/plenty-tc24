@@ -165,13 +165,10 @@
                         <table class="table table-striped table-hover table-sm">
                           <tbody>
 
-                          <span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 21">
                             <tr>
-                                <td>${ property.property.names.name}</td>
-                                <td>${ property.texts.value}</td>
+                                <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 21">${ property.property.names.name}</span></td>
+                                <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 21">${ property.texts.value}</span><</td>
                             </tr>
-                            </span>
-
 
                           </tbody>
                         </table>

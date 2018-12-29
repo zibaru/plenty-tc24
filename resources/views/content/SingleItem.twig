@@ -215,14 +215,14 @@
                           <tr> <!--  ARTIKELNUMMER -->
                             <td>{{ trans("Ceres::Template.singleItemId") }}</td>
                             <td>${ currentVariation.item.id }</td>
-                          </tr>                          
+                          </tr>
                         </tbody>
                       </table>
                     </div>
                     <!--  ENDE TABELLE FUER MERKMALE -->
 
 
-                    <!--  EINSCHUB FUER DIE ARTIKELMERKMALE -->
+                    <!--  EINSCHUB FUER DIE ARTIKELMERKMALE
                     <ul>
                       {% for prop in item.documents[0].data.properties %}
                           {% if prop.group.names.propertyGroupId == "2" %}
@@ -232,7 +232,7 @@
                           {% endif %}
                       {% endfor %}
                     </ul>
-                    <!-- ENDE DES EINSCHUBS -->
+                    ENDE DES EINSCHUBS -->
 
 
 

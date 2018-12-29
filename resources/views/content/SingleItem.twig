@@ -160,9 +160,9 @@
                       <div class="m-y-2">
                         <table class="table table-striped table-hover table-sm">
                           <tbody>
-                            <tr> <!--  HERSTELLER -->
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 14">${ property.property.names.name}</span></td>
-                              <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 14">${ property.texts.value}</span></td>
+                            <tr v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 14"> <!--  HERSTELLER -->
+                              <td>${ property.property.names.name}</td>
+                              <td>${ property.texts.value}</td>
                             </tr>
                             <tr> <!--  ZOLL -->
                               <td><span v-for="(property, index) in currentVariation.properties" v-if="property.property.id == 23">${ property.property.names.name}</span></td>
@@ -216,22 +216,6 @@
                         </table>
                       </div>
                       <!--  ENDE TABELLE FUER MERKMALE -->
-
-
-                    <!--  EINSCHUB FUER DIE ARTIKELMERKMALE -->
-                    <ul>
-                      {% for prop in item.documents[0].data.properties %}
-                          {% if prop.group.names.propertyGroupId == "2" %}
-                              <li>
-                                  <b>{{ prop.property.names.name }}:</b> {{ prop.texts.value }}
-                              </li>
-                          {% endif %}
-                      {% endfor %}
-                    </ul>
-                    <!-- ENDE DES EINSCHUBS -->
-
-
-
 
 
 
